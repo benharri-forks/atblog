@@ -15,9 +15,9 @@ export async function GET() {
 
   const rss = new RSS({
     title: "mozzius.dev",
-    feed_url: "https://mozzius.dev/rss",
-    site_url: "https://mozzius.dev",
-    description: "a webbed site",
+    feed_url: "https://atblog.benharri.org/rss",
+    site_url: "https://atblog.benharri.org",
+    description: "a webbed sight",
   });
 
   for (const post of posts) {

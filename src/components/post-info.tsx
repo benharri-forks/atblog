@@ -32,7 +32,7 @@ export function PostInfo({
             href={`https://bsky.app/profile/${MY_DID}`}
             className="hover:underline hover:underline-offset-4"
           >
-            Samuel
+            Ben
           </a>{" "}
           &middot;{" "}
         </>

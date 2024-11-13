@@ -29,9 +29,9 @@ export async function generateMetadata({
   const post = await getPost(rkey);
 
   return {
-    title: post.value.title + " — mozzius.dev",
-    authors: [{ name: "Samuel", url: `https://bsky.app/profile/${MY_DID}` }],
-    description: `by Samuel · ${readingTime(post.value.content).text}`,
+    title: post.value.title + " — ben blogs",
+    authors: [{ name: "Ben", url: `https://bsky.app/profile/${MY_DID}` }],
+    description: `by Ben · ${readingTime(post.value.content).text}`,
   };
 }
 

@@ -1,19 +1,15 @@
-import { withPlausibleProxy } from "next-plausible";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  distDir: "dist",
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "amanita.us-east.host.bsky.network",
+        hostname: "hellthread.pro",
         pathname: "/xrpc/com.atproto.sync.getBlob",
         // search: '?did=did%3Aplc%3Ap2cp5gopk7mgjegy6wadk3ep&cid=**',
       },
     ],
   },
 };
-
-export default withPlausibleProxy({
-  customDomain: "https://plausible.mozzius.dev",
-})(nextConfig);

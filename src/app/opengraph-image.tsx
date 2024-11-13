@@ -11,7 +11,7 @@ export const contentType = "image/png";
 export default async function OpenGraphImage() {
   const fontData = await loadGoogleFont(
     "Libre+Baskerville:ital@1",
-    "MOZZIUS.DEV a webbed site",
+    "@blog a webbed sight",
   );
 
   return new ImageResponse(
@@ -34,7 +34,7 @@ export default async function OpenGraphImage() {
             fontFamily: '"Libre Baskerville"',
           }}
         >
-          a webbed site
+          a webbed sight
         </h1>
       </div>
     ),

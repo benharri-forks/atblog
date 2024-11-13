@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import NextPlausible from "next-plausible";
 import { Inter, Libre_Baskerville } from "next/font/google";
 import localFont from "next/font/local";
 
@@ -27,12 +26,12 @@ const mono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "mozzius.dev",
-  description: "a webbed site",
+  title: "atblog.benharri.org",
+  description: "a webbed sight",
   alternates: {
-    canonical: "https://mozzius.dev",
+    canonical: "https://atblog.benharri.org",
     types: {
-      "application/rss+xml": "https://mozzius.dev/rss",
+      "application/rss+xml": "https://atblog.benharri.org/rss",
     },
   },
 };
@@ -45,12 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <NextPlausible
-          domain="mozzius.dev"
-          customDomain="https://plausible.mozzius.dev"
-          trackOutboundLinks
-          selfHosted
-        />
+        <title>atblog</title>
       </head>
       <body
         className={cx(
